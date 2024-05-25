@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Success Page</title>
+<style>
+  /* Your CSS styles here */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    animation: gradientAnimation 15s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .message-container {
+    text-align: center;
+  }
+
+  .logos-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .logos-container img {
+    width: 150px; /* Increase logo size */
+    margin: 20px; /* Add spacing between logos */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+
+  .logos-container img:hover {
+    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+  }
+
+  h1, h2 {
+    margin-top: 10px; /* Adjust margin-top as needed */
+    color: #f0f0f0; /* Light shade of gray */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    font-size: 16px; /* Initial font size */
+    animation: increaseSize 5s ease forwards; /* Animation */
+  }
+
+  @keyframes increaseSize {
+    0% {
+      font-size: 12px; /* Initial font size */
+    }
+    100% {
+      font-size: 28px; /* Final font size */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="message-container">
+  <center>
+    <h1> Which app you want to purchase? </h1>
+    <h2>Click on a logo &#x1F447;</h2> <!-- Hand clicking emoji -->
+  </center>
+  <div class="logos-container">
+    <a href="https://www.amazon.com/" target="_blank"> <!-- Opens in a new tab -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png" alt="Amazon Logo">
+    </a>
+    <a href="https://www.flipkart.com/" target="_blank"> <!-- Opens in a new tab -->
+      <img src="https://www.logo.wine/a/logo/Flipkart/Flipkart-Logo.wine.svg" alt="Flipkart Logo">
+    </a>
+    <a href="https://www.meesho.com/" target="_blank"> <!-- Opens in a new tab -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Meesho_logo.png" class="meesho-img"> <!-- Slightly decreased size -->
+    </a>
+  </div>
+</div>
+</body>
+</html>

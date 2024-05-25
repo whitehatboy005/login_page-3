@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Success Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    animation: gradientAnimation 15s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .message-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    animation: slideUp 0.6s ease;
+    position: relative; /* Add relative positioning */
+    z-index: 1; /* Ensure the message container appears above the background */
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .message-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px; /* Increase font size for emphasis */
+  }
+
+  .success-message {
+    color: #4CAF50;
+    font-size: 20px;
+    margin-bottom: 20px; /* Add space between message and button */
+  }
+
+  .continue-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    animation: moveBottom 1s ease infinite alternate;
+  }
+
+  .continue-button:hover {
+    background-color: #45a049;
+    animation: none; /* Disable animation on hover */
+  }
+
+  @keyframes moveBottom {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="message-container">
+  <h2>Congratulations! &#128512;</h2> <!-- Happy emoji -->
+  <div class="success-message">You have successfully logged in </div>
+  <a href="E:\results.html" class="continue-button">Continue</a>
+</div>
+</body>
+</html>
